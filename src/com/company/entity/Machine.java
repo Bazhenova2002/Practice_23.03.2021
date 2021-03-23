@@ -6,5 +6,14 @@ public abstract class Machine {
     private Engine engine;
     private int speed;
 
+
+    public Machine(String name, String model, Engine engine, int speed) {
+        this.name = name;
+        this.model = model;
+        this.engine = engine;
+        this.speed = speed;
+    }
+
     public abstract void move();
+
 }
